@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Suç ve Ceza",
+      "author": "Dostoyevski",
+      "image": "https://picsum.photos/200",
+      "year": 1930
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "image": "https://picsum.photos/201",
+      "year": 1949
+    },
+    {
+      "id": 3,
+      "title": "Sefiller",
+      "author": "Victor Hugo",
+      "image": "https://picsum.photos/202",
+      "year": 1862
+    },
+    {
+      "id": 4,
+      "title": "İçimizdeki Şeytan",
+      "author": "Sabahattin Ali",
+      "image": "https://picsum.photos/203",
+      "year": 1940
+    },
+    {
+      "id": 5,
+      "title": "Anna Karenina",
+      "author": "Lev Tolstoy",
+      "image": "https://picsum.photos/204",
+      "year": 1877
+    },
+    {
+      "id": 6,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "image": "https://picsum.photos/205",
+      "year": 1965
+    }
+  ]
+}
