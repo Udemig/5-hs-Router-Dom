@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import ProductCard from '../components/productCard';
 
 const ProductsPage = () => {
   const [bookState, setBookState] = useState(null);
@@ -10,12 +11,16 @@ const ProductsPage = () => {
     });
   }, []);
 
+  // eğerki apiden hala cevap gelmediyse loading yaz
+  if (!bookState) return 'Yükleniyor...';
+
   return (
     <div>
       <h1>Ürünlerin Hepsi BUrada Yer Alıyor</h1>
-      <div>
+      <div className="cards-container">
+        {/* dizideki herbir obje için ekrana productCard basılır */}
         {bookState.map((book) => (
-          <div>{book.title}</div>
+          <ProductCard key={book.id} book={book} />
         ))}
       </div>
     </div>
