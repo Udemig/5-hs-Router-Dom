@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header>
-      <h1>Kitap Dünyası</h1>
+      <h1 onClick={() => navigate('/')}>Kitap Dünyası</h1>
       <div>
         <NavLink to="/">Anasayfa</NavLink>
         <NavLink to={'/books'}>Kitaplar</NavLink>
